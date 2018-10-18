@@ -1,0 +1,526 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}% delete the demo option in your actual code
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{mathabx}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{bigstrut}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{makecell}
+\usepackage{textcomp}
+\usepackage{titlesec}
+\usepackage[para]{footmisc}
+\usepackage[nottoc]{tocbibind}
+\usepackage{hyperref}
+\geometry{lmargin=.5cm,bmargin=0.5cm,rmargin=1.5cm}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\begin{document}
+
+\section{Position variating Sources}\label{possection:KmeulenSimSource:1hr}
+
+\begin{longtable}{c|c|c|c|c} 
+\toprule 
+Database & Ra (deg) & Dec (deg)& Fk5 & Id/Link \\\midrule 
+\endfirsthead 
+\toprule 
+Database & Ra (deg) & Dec (deg) & Fk5 &Id/Link  \\\midrule 
+\endhead 
+\bottomrule 
+\endfoot 
+\bottomrule
+\caption{ Comparison position of candidates with TGSS and VLSSR for the 1hr timescale data} 
+\endlastfoot
+\label{KmeulenSimSource:1hr:tablepos}
+
+tgss \& vlssr & -174.281 & 50.469 & 12 22 52 +50 28 07 &  \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4496}{4496} \\
+tgss \& vlssr & 183.500 & 46.034 & 12 14 00 +46 02 01 &  \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5774}{5774} \\
+tgss \& vlssr & 183.050 & 45.000 & 12 12 12 +45 00 00 &  \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5772}{5772} \\
+\end{longtable}
+
+\subsection{Images}
+\begin{longtable}{m{1cm}|m{6cm}|m{6cm}|m{6cm}} 
+\toprule 
+Id & Data & TGSS (deg)& VLSSR  \\\midrule 
+\endfirsthead 
+\toprule 
+Id & Data & TGSS (deg)& VLSSR   \\\midrule 
+\endhead 
+\bottomrule 
+\endfoot 
+\bottomrule
+\caption{Images to compare the  position of our candidates with TGSS and VLSSR for the 1hr timescale data} 
+\endlastfoot
+\label{KmeulenSimSource:1hr:tablepos_images}
+\href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4496}{4496} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/4496cutout_own.png}} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/4496cutout_tgss.png}} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/4496cutout_vlssr.png}} \\
+\href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5774}{5774} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/5774cutout_own.png}} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/5774cutout_tgss.png}} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/5774cutout_vlssr.png}} \\
+\href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5772}{5772} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/5772cutout_own.png}} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/5772cutout_tgss.png}} & \raisebox{-\totalheight}{\includegraphics[width=6cm, height=6cm]{KmeulenSimSource_1hr/5772cutout_vlssr.png}} \\
+\end{longtable}
+
+\begin{landscape}
+
+\section{Fluxvariating Sources}\label{varsection:KmeulenSimSource:1hr}
+
+\begin{longtable}{c|c|c|c|c|c|c|c|c|c|c|c} 
+\toprule 
+Flux147.5MHz (Jy) & Tgss (Jy) & Flux74MHz (Jy)& Vlssr (Jy) & fk5 & Ra (deg) & Dec (deg) &tggsRa&tgssDec&vlssrRa&vlssrDec& Id/Link \\\midrule 
+\endfirsthead 
+\toprule 
+Flux147.5MHz (Jy) & Tgss (Jy) & Flux74MHz (Jy)& Vlssr (Jy)& fk5 & Ra (deg) & Dec (deg)  &tggsRa&tgssDec&vlssrRa&vlssrDec& Id/Link \\\midrule 
+\endhead 
+\bottomrule 
+\endfoot 
+\bottomrule
+\caption{ Comparison of fluxes that vary from catalogues TGSS and VLSSR for 1hr images} 
+\endlastfoot
+\label{KmeulenSimSource:1hr:tablevar}
+1.783 & 3.763 & 2.82 & 5.306 & 12 13 27 +48 23 12 &  183.365 & 48.387 &  183.372 & 48.387 & 183.373 & 48.387 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4854}{4854}  \\
+1.242 & 2.534 & 1.964 & 4.146 & 12 25 25 +45 14 54 &  186.352 & 45.248 &  186.353 & 45.252 & 186.352 & 45.250 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5314}{5314}  \\
+0.719 & 1.152 & 1.137 & 1.866 & 12 09 45 +46 55 16 &  182.437 & 46.921 &  182.438 & 46.921 & 182.437 & 46.921 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4763}{4763}  \\
+0.855 & 1.296 & 1.352 & 2.189 & 12 31 07 +47 59 14 &  187.778 & 47.987 &  187.780 & 47.986 & 187.776 & 47.986 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5522}{5522}  \\
+0.794 & 1.412 & 1.256 & 2.276 & 12 07 48 +45 13 58 &  181.951 & 45.233 &  181.946 & 45.233 & 181.947 & 45.233 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3153}{3153}  \\
+1.041 & 2.049 & 1.646 & 3.539 & 12 24 13 +46 20 10 &  186.056 & 46.336 &  186.052 & 46.337 & 186.052 & 46.336 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5265}{5265}  \\
+1.613 & 2.736 & 2.552 & 4.509 & 12 25 55 +44 56 23 &  186.478 & 44.940 &  186.478 & 44.940 & 186.478 & 44.939 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5331}{5331}  \\
+0.698 & 1.072 & 1.104 & 1.787 & 12 39 26 +47 28 07 &  189.859 & 47.469 &  189.856 & 47.472 & 189.856 & 47.471 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5756}{5756}  \\
+1.081 & 2.337 & 1.709 & 3.276 & 12 23 12 +44 36 02 &  185.802 & 44.601 &  185.794 & 44.595 & 185.793 & 44.595 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3053}{3053}  \\
+0.873 & 0.597 & - & - & 12 39 10 +48 33 50 &  189.793 & 48.564 &  189.792 & 48.564 & - & - & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4147}{4147}  \\
+0.701 & 0.501 & - & - & 12 25 12 +45 23 28 &  186.302 & 45.391 &  186.302 & 45.391 & - & - & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3707}{3707}  \\
+0.782 & 1.336 & 1.237 & 2.031 & 12 11 03 +45 39 05 &  182.764 & 45.651 &  182.761 & 45.654 & 182.760 & 45.653 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3420}{3420}  \\
+- & - & 2.197 & 2.586 & 12 32 38 +48 17 04 &  188.157 & 48.285 &  - & - & 188.154 & 48.283 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5561}{5561}  \\
+- & - & 2.866 & 2.621 & 12 05 13 +48 17 54 &  181.302 & 48.298 &  - & - & 181.302 & 48.299 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4656}{4656}  \\
+- & - & 10.006 & 9.248 & 12 22 52 +50 26 55 &  185.716 & 50.449 &  - & - & 185.716 & 50.451 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5198}{5198}  \\
+- & - & 1.657 & 1.573 & 12 08 25 +49 43 29 &  182.103 & 49.725 &  - & - & 182.104 & 49.725 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4744}{4744}  \\
+- & - & 1.254 & 1.488 & 12 26 08 +47 36 56 &  186.532 & 47.615 &  - & - & 186.532 & 47.616 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5334}{5334}  \\
+- & - & 1.169 & 1.188 & 12 33 07 +45 29 00 &  188.278 & 45.483 &  - & - & 188.274 & 45.483 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5599}{5599}  \\
+- & - & 1.536 & 1.37 & 12 22 08 +46 45 18 &  185.532 & 46.755 &  - & - & 185.531 & 46.755 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5181}{5181}  \\
+- & - & 5.036 & 4.409 & 12 34 21 +49 14 27 &  188.587 & 49.241 &  - & - & 188.586 & 49.242 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5604}{5604}  \\
+- & - & 2.125 & 2.673 & 12 10 41 +49 07 30 &  182.671 & 49.125 &  - & - & 182.672 & 49.126 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5067}{5067}  \\
+- & - & 2.599 & 3.229 & 12 04 36 +48 56 55 &  181.150 & 48.949 &  - & - & 181.149 & 48.950 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4651}{4651}  \\
+- & - & 1.21 & 1.243 & 12 07 02 +48 01 56 &  181.759 & 48.032 &  - & - & 181.760 & 48.032 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4695}{4695}  \\
+- & - & 2.263 & 2.122 & 12 18 39 +50 25 47 &  184.661 & 50.430 &  - & - & 184.667 & 50.431 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4275}{4275}  \\
+- & - & 3.827 & 3.886 & 12 09 58 +46 18 06 &  182.490 & 46.302 &  - & - & 182.490 & 46.300 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4769}{4769}  \\
+- & - & 1.279 & 1.441 & 12 15 10 +46 27 16 &  183.791 & 46.454 &  - & - & 183.791 & 46.453 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4919}{4919}  \\
+- & - & 1.439 & 1.476 & 12 14 06 +50 28 45 &  183.523 & 50.479 &  - & - & 183.525 & 50.481 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4896}{4896}  \\
+- & - & 1.717 & 1.38 & 12 12 58 +48 48 24 &  183.240 & 48.807 &  - & - & 183.242 & 48.807 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4834}{4834}  \\
+- & - & 1.244 & 0.522 & 12 19 06 +48 29 56 &  184.777 & 48.499 &  - & - & 184.777 & 48.501 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5125}{5125}  \\
+- & - & 1.8 & 2.609 & 12 14 39 +50 06 49 &  183.661 & 50.114 &  - & - & 183.659 & 50.115 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4914}{4914}  \\
+- & - & 2.49 & 1.889 & 12 28 52 +48 58 00 &  187.216 & 48.967 &  - & - & 187.217 & 48.970 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5375}{5375}  \\
+- & - & 3.804 & 3.012 & 12 21 11 +48 42 40 &  185.295 & 48.711 &  - & - & 185.295 & 48.714 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3589}{3589}  \\
+- & - & 2.496 & 2.413 & 12 21 24 +50 35 25 &  185.349 & 50.590 &  - & - & 185.347 & 50.593 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5479}{5479}  \\
+- & - & 1.609 & 2.565 & 12 08 05 +49 48 37 &  182.021 & 49.810 &  - & - & 182.019 & 49.810 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3178}{3178}  \\
+- & - & 1.129 & 1.011 & 12 27 35 +44 58 31 &  186.895 & 44.975 &  - & - & 186.897 & 44.975 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4045}{4045}  \\
+- & - & 1.357 & 1.116 & 12 26 01 +45 51 52 &  186.502 & 45.864 &  - & - & 186.501 & 45.866 & \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3738}{3738}  \\
+\end{longtable}
+
+\end{landscape}
+
+\subsection{Fits}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5265.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5265}{5265},\\with a goodness of fit of: 0.23 and a dof of: 1}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:5265:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3053.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3053}{3053},\\with a goodness of fit of: 0.0 and a dof of: 0}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:3053:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4763.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4763}{4763},\\with a goodness of fit of: 1.62 and a dof of: 5}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4763:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5331.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5331}{5331},\\with a goodness of fit of: 0.43 and a dof of: 6}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5331:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4147.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4147}{4147},\\with a goodness of fit of: 0.28 and a dof of: 4}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4147:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3707.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3707}{3707},\\with a goodness of fit of: 1.31 and a dof of: 3}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:3707:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5314.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5314}{5314},\\with a goodness of fit of: 0.00 and a dof of: 0}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:5314:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4854.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4854}{4854},\\with a goodness of fit of: 8.59 and a dof of: 1}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:4854:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3153.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3153}{3153},\\with a goodness of fit of: 0.00 and a dof of: 0}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:3153:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5756.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5756}{5756},\\with a goodness of fit of: 0.86 and a dof of: 1}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5756:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4656.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4656}{4656},\\with a goodness of fit of: 2.66 and a dof of: 4}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4656:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4744.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4744}{4744},\\with a goodness of fit of: 2.93 and a dof of: 3}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:4744:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5334.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5334}{5334},\\with a goodness of fit of: 4.28 and a dof of: 6}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:5334:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5561.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5561}{5561},\\with a goodness of fit of: 0.26 and a dof of: 2}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5561:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3420.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3420}{3420},\\with a goodness of fit of: 0.00 and a dof of: 0}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:3420:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5198.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5198}{5198},\\with a goodness of fit of: 13.59 and a dof of: 8}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5198:plot}
+    \end{minipage}
+\end{figure}
+\newpage
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5599.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5599}{5599},\\with a goodness of fit of: 1.75 and a dof of: 4}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:5599:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5181.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5181}{5181},\\with a goodness of fit of: 2.71 and a dof of: 7}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5181:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5604.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5604}{5604},\\with a goodness of fit of: 3.46 and a dof of: 7}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:5604:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5067.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5067}{5067},\\with a goodness of fit of: 2.59 and a dof of: 5}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5067:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5522.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5522}{5522},\\with a goodness of fit of: 1.73 and a dof of: 2}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:5522:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4651.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4651}{4651},\\with a goodness of fit of: 1.39 and a dof of: 6}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:4651:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4275.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4275}{4275},\\with a goodness of fit of: 0.00 and a dof of: 0}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4275:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4695.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4695}{4695},\\with a goodness of fit of: 0.94 and a dof of: 5}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:4695:plot}
+    \end{minipage}
+\end{figure}
+\newpage
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4769.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4769}{4769},\\with a goodness of fit of: 1.67 and a dof of: 6}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4769:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5125.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5125}{5125},\\with a goodness of fit of: 6.41 and a dof of: 11}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5125:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4834.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4834}{4834},\\with a goodness of fit of: 2.36 and a dof of: 4}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4834:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4919.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4919}{4919},\\with a goodness of fit of: 16.68 and a dof of: 8}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:4919:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4914.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4914}{4914},\\with a goodness of fit of: 1.48 and a dof of: 4}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4914:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4896.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4896}{4896},\\with a goodness of fit of: 1.58 and a dof of: 4}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:4896:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5375.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5375}{5375},\\with a goodness of fit of: 6.28 and a dof of: 7}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:5375:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr5479.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/5479}{5479},\\with a goodness of fit of: 2.76 and a dof of: 4}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:5479:plot}
+    \end{minipage}
+\end{figure}
+\newpage
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3589.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3589}{3589},\\with a goodness of fit of: 1.25 and a dof of: 5}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:3589:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3178.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3178}{3178},\\with a goodness of fit of: 25.0 and a dof of: 0}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:3178:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr4045.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/4045}{4045},\\with a goodness of fit of: 0.93 and a dof of: 4}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:4045:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3738.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3738}{3738},\\with a goodness of fit of: 1.32 and a dof of: 3}
+    \addtocounter{figure}{-1}
+    \label{KmeulenSimSource:1hr:3738:plot}
+    \end{minipage}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[scale = 0.35]{KmeulenSimSource_1hr/1hr3738.png}
+        \captionsetup{labelformat=empty}
+        \caption{Plot of source: \href{http://banana.transientskp.org/r4/vlo_KmeulenSimSource/runningcatalog/3738}{3738},\\with a goodness of fit of: 1.32 and a dof of: 3}
+        \addtocounter{figure}{-1}
+        \label{KmeulenSimSource:1hr:3738:plot}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+
+--
+        \end{minipage}
+\end{figure}
+\section{Effect on Candidate List}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c| c | c|}
+    \toprule
+     Step & Candidate list before & Candidate list after\\
+    \midrule
+        Initial Selector & 90 & 46 \\
+        PosVarCandi & 46 & 3 \\
+        FluxVarCandi & 46 & 36  \\
+        \midrule
+    \end{tabular}
+    \caption{Effect of our script on the size of the candidate list for the 1hr timescale images}
+    \label{KmeulenSimSource:1hr:overviewcandidates}
+\end{table}
+
+\end{document}
